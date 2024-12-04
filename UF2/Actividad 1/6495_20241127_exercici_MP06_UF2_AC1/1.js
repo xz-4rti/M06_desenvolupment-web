@@ -1,4 +1,5 @@
 function funcion1(){
-    console.log("Función 1 ejecutada");
+    $numRan = Math.floor(Math.random() * 10);
+    console.log("Numero aleatori: " + $numRan);
 }
 
