@@ -1,0 +1,15 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.html",
+            "file": "c:\\Users\\aarat\\Desktop\\2 DAM\\M06_desenvolupment-web\\UF2\\Actividad 1\\6495_20241127_exercici_MP06_UF2_AC1\\index.html"
+        }
+    ]
+}

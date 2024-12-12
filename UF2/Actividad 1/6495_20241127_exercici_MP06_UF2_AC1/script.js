@@ -1,10 +1,15 @@
 // Tasca 1 
 
+<<<<<<< HEAD
 function loadScript(src, resolve, reject) {
+=======
+function loadScript(src) {
+>>>>>>> 5515fe2d503652956f8b417cb826ab970e56ce23
 
     return new Promise((resolve, reject) => {
 
         if (!src) {
+<<<<<<< HEAD
             reject('Error en el proceso');
             return;
         }
@@ -27,6 +32,32 @@ loadScript('', () => {
 },
     console.log()
 );
+=======
+            errorCallback("Error en el proceso");
+            return;
+        }
+    
+        let script = document.createElement('script');
+        script.src = src;
+        script.onload = () => resolve();
+        script.onerror = () => reject("Error al cargar el script");
+        document.head.append(script);
+
+    });
+
+}
+
+loadScript('1.js')
+    .then(() => {
+        const result = funcion1();
+        console.log("Funcion 1: " + result);
+    })
+    .catch((error) => console.error(error));
+
+
+// loadScript('1.js', () => funcion1());
+
+>>>>>>> 5515fe2d503652956f8b417cb826ab970e56ce23
 
 loadScript('1.js')
     .then(() => funcion1())
@@ -39,6 +70,7 @@ loadScript('1.js')
   
 // Tasca 2
 
+<<<<<<< HEAD
 // function sleep(milliseconds) {
 //     return new Promise(function (resolved, rejected){
 //         setTimeout(funcion(){
@@ -73,3 +105,16 @@ function sleep(milliseconds) {
 
 // Fetch() -> Jason -> fech fech fech fech -> json json json json
 // fetch tiene dos fases -> Primero respuesta y segundo parseado
+=======
+function sleep(milliseconds) {
+    return new Promise((resolve) => {
+        setTimeout(resolve, milliseconds);
+    })
+}
+
+sleep(3000)
+    .then(()=>{
+        console.log('Sleep finalizado. Continua ejecución del programa...');
+    })
+
+>>>>>>> 5515fe2d503652956f8b417cb826ab970e56ce23
